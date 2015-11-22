@@ -52,6 +52,4 @@ cacheSolve <- function(x, ...) {
         
 }
 
-a<-matrix(c(9,2,3,4,5,6,7,8,9), ncol=3)
-x<-makeCacheMatrix(a)
-cacheSolve(x)
+
