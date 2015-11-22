@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ##These functions: 
 ## -take a matrix as an input argument
 ## -check to see if the matrix inverse has been cached
