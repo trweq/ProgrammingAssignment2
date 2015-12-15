@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     getOrigMatrix <- function() x
     setInverseMatrix <- function(inv) i <<- inv
-    getInverseMatrix <- function(x) i
+    getInverseMatrix <- function() i
     
     list(set = set,
          getOrigMatrix = getOrigMatrix,
@@ -53,4 +53,14 @@ cacheSolve <- function(x, ...) {
         
 }
 
+a<-matrix(c(9,2,3,4,5,6,7,8,9), ncol=3)
+x<-makeCacheMatrix(a)
+cacheSolve(x)
+cacheSolve(x)
+
+b<-matrix(c(10,2,3,4,5,6,7,8,9), ncol=3)
+x<-makeCacheMatrix(b)
+
+cacheSolve(x)
+cacheSolve(x)
 
